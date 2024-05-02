@@ -115,3 +115,41 @@
 # List comprehension
 # numbers = [number**3 for number in range(1,11)]
 # print(numbers)
+
+# Lists
+items = ["Window","Doors","Roof","Cabinet","Table"]
+items.append("Bulb")
+items.insert(0,"Bathroom")
+print(items)
+# items.pop()
+
+# print individual lines of items
+# for item in items:
+#     print("Which are the elements of a house?",item)
+
+#sort in ascending order. does not revert to original
+# items.sort()
+# print(items)
+
+# sort in descending order
+# items.sort(reverse=True)
+# print(items)
+
+# sorted sorts once, reverts to original 
+# print(sorted(items))
+# print(items)
+
+#sort in reverse. last becomes first and so on
+# items.reverse()
+# print(items)
+
+#length of entries in a list
+print("The number of items in this list is: ",len(items))
+
+# use sort and reverse
+items.sort()
+print(items)
+reverse_sort=items.reverse()
+print(items)
+
+

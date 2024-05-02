@@ -7,20 +7,24 @@ countries = ["Seychelles", "Mauritius", "South Africa","Botswana"]
 cities = ["Bujumbura", "Kinsasha", "Lagos", "Pretoria", "Daresalaam"]
 languages = ["Swahili", "French","Khosa","Pigme","Espanol"]
 
-mountains.sort()
-print(mountains)
+# mountains.sort()
+# print(mountains)
 
-rivers.sort(reverse=True)
-print(rivers)
+# rivers.sort(reverse=True)
+# print(rivers)
 
-print(sorted(languages))
-print(languages)
+# print(sorted(languages))
+# print(languages)
 
-cities.reverse()
-print(cities)
+# cities.reverse()
+# print(cities)
 
 # combining sorted and reverse
-reversed_cities = sorted(cities)
-reversed_cities.reverse()
-print(reversed_cities)
+# reversed_cities = sorted(cities)
+# reversed_cities.reverse()
+# print(reversed_cities)
 
+#Alternative method Abel to confirm
+cities.sort()
+reverse_cities = cities.reverse()
+print(cities)
