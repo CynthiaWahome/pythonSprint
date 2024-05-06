@@ -1,8 +1,8 @@
 my_foods = ["ugali", "rice", "chapo", "beans", "peas"]
 
 friends_foods = my_foods[:]
-#friends_foods = my_foods
-#print(friends_foods)
+# friends_foods = my_foods
+print(friends_foods)
 
 my_foods.append("Uji Power")
 

@@ -5,3 +5,6 @@ for food in foods:
 foods = ("orange", "Salad", "samosa", "sausages")
 for food in foods:
     print(food)
+foods.append("Macarooni")
+print(food)
+
