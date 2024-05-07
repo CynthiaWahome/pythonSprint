@@ -22,6 +22,7 @@
 # for cube in cubes:
 #     print(int(cube**3))
 
-cubes = list(range(1, 11))
-cubed = cubes**(3)
-print(cubed)
+cubes = []
+for cube in range(1,11):
+    cubes.append(cube **3)
+    print(cubes)

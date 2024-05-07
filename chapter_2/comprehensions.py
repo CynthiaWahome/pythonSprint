@@ -1,3 +1,4 @@
+# List Comprehension offers the shortest syntax for looping through lists
 nums = []
 
 for i in range(0, 11):
