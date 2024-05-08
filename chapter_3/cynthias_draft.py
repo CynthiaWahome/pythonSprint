@@ -220,4 +220,3 @@ print(c[:])
 c.clear()
 print(c[:])
 
-# Turples
