@@ -152,6 +152,7 @@ print(items)
 # reverse_sort=items.reverse()
 # print(items)
 
+<<<<<<< HEAD:chapter_3/cynthias_draft.py
 # check if sring is a paledrome string
 str = "abccba"
 
@@ -220,3 +221,19 @@ print(c[:])
 c.clear()
 print(c[:])
 
+=======
+foods = ["Rice","Spaghetti","Chapati","Ugali"]
+print("\nThis is a list of food: ",foods,"\n")
+print("\n\t\t\tI like",foods[0],"and maybe",foods[2],"a littu bit of", foods[3],"\n\t\t\tnot so much a fan of", foods[1],"\n")
+for food in foods:
+    print("We have:",food,"\n")
+print("\nThe price of",foods[0],foods[3],"is 50 USD")
+print("The most popular food is",foods[1],foods[2],"\nTheses would also cost a fortune btw\n")
+foods.append("Chicken curry")
+print("Appended list of foods:",foods,"\n")
+foods.insert(1,"Beef Stew")
+print("Insert a beefy stew at index 2: ",foods,"\n")
+famous_quote = "'Mimi ni Mukurima, nanyi Muzabibu, zaleni matunda iri mukure'"
+famous_quoter = "Martin Luther"
+print(f"{famous_quoter} once spoke gibberish and said {famous_quote} \n")
+>>>>>>> main:chapter_2/cynthias_draft.py
