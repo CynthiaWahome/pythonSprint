@@ -152,6 +152,76 @@ print(items)
 # reverse_sort=items.reverse()
 # print(items)
 
+<<<<<<< HEAD:chapter_3/cynthias_draft.py
+# check if sring is a paledrome string
+str = "abccba"
+
+str=str.casefold()
+#for casesensitive string
+
+str1 = reversed(str)
+#reversed the string
+
+if list(str) == list(str1):
+    print(str,"is a paledrome")
+else:
+    print("is not a paledrome")
+
+# String Sorting
+str = "Python programming is super easy to learn!"
+
+str1 = str.split()
+#split the string to words
+
+str1.sort()
+#sort the splitted words
+
+for words in str1:
+    print(words)
+
+# Give user input
+str = input("Enter a string: ")
+
+str1 = str.split()
+str1.sort()
+for words in str1:
+    print(words)
+
+# deleting items in a list
+
+p = [1,2,3,4,5,6,7,8,9,0]
+
+del p[2]
+print(p[:])
+
+del p[-3]
+print(p[:])
+
+p.remove(0)
+print(p[:])
+
+p.pop()
+print(p[:])
+
+p.clear()
+print(p[:])
+
+print("\n\n\n")
+c = [6,4,8,4,2,1,9,0]
+
+c.remove(4)
+print(c[:])
+
+c.sort()
+print(c[:])
+
+c.reverse()
+print(c[:])
+
+c.clear()
+print(c[:])
+
+=======
 foods = ["Rice","Spaghetti","Chapati","Ugali"]
 print("\nThis is a list of food: ",foods,"\n")
 print("\n\t\t\tI like",foods[0],"and maybe",foods[2],"a littu bit of", foods[3],"\n\t\t\tnot so much a fan of", foods[1],"\n")
@@ -166,3 +236,4 @@ print("Insert a beefy stew at index 2: ",foods,"\n")
 famous_quote = "'Mimi ni Mukurima, nanyi Muzabibu, zaleni matunda iri mukure'"
 famous_quoter = "Martin Luther"
 print(f"{famous_quoter} once spoke gibberish and said {famous_quote} \n")
+>>>>>>> main:chapter_2/cynthias_draft.py
