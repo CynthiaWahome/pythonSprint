@@ -7,7 +7,7 @@ for num in nums:
         print(num,"nd")
     elif num == 3:
         print(num,"rd")
-    elif num < 4 or num < 10:
+    elif num < 3 or num < 10:
         print(num,"th")
     else:
         print("That number is not in the list")
