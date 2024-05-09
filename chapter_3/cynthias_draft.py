@@ -116,124 +116,152 @@
 # numbers = [number**3 for number in range(1,11)]
 # print(numbers)
 
-# Lists
-items = ["Window","Doors","Roof","Cabinet","Table"]
-items.append("Bulb")
-items.insert(0,"Bathroom")
-print(items)
-# items.pop()
-
-# print individual lines of items
-# for item in items:
-#     print("Which are the elements of a house?",item)
-
-#sort in ascending order. does not revert to original
-# items.sort()
+# # Lists
+# items = ["Window","Doors","Roof","Cabinet","Table"]
+# items.append("Bulb")
+# items.insert(0,"Bathroom")
 # print(items)
+# # items.pop()
 
-# sort in descending order
-# items.sort(reverse=True)
-# print(items)
+# # print individual lines of items
+# # for item in items:
+# #     print("Which are the elements of a house?",item)
 
-# sorted sorts once, reverts to original 
-# print(sorted(items))
-# print(items)
+# #sort in ascending order. does not revert to original
+# # items.sort()
+# # print(items)
 
-#sort in reverse. last becomes first and so on
-# items.reverse()
-# print(items)
+# # sort in descending order
+# # items.sort(reverse=True)
+# # print(items)
 
-#length of entries in a list
-#print("The number of items in this list is: ",len(items))
+# # sorted sorts once, reverts to original 
+# # print(sorted(items))
+# # print(items)
 
-# use sort and reverse
-# items.sort()
-# print(items)
-# reverse_sort=items.reverse()
-# print(items)
+# #sort in reverse. last becomes first and so on
+# # items.reverse()
+# # print(items)
 
-<<<<<<< HEAD:chapter_3/cynthias_draft.py
-# check if sring is a paledrome string
-str = "abccba"
+# #length of entries in a list
+# #print("The number of items in this list is: ",len(items))
 
-str=str.casefold()
-#for casesensitive string
+# # use sort and reverse
+# # items.sort()
+# # print(items)
+# # reverse_sort=items.reverse()
+# # print(items)
 
-str1 = reversed(str)
-#reversed the string
+# # check if sring is a paledrome string
+# str = "abccba"
 
-if list(str) == list(str1):
-    print(str,"is a paledrome")
-else:
-    print("is not a paledrome")
+# str=str.casefold()
+# #for casesensitive string
 
-# String Sorting
-str = "Python programming is super easy to learn!"
+# str1 = reversed(str)
+# #reversed the string
 
-str1 = str.split()
-#split the string to words
+# if list(str) == list(str1):
+#     print(str,"is a paledrome")
+# else:
+#     print("is not a paledrome")
 
-str1.sort()
-#sort the splitted words
+# # String Sorting
+# str = "Python programming is super easy to learn!"
 
-for words in str1:
-    print(words)
+# str1 = str.split()
+# #split the string to words
 
-# Give user input
-str = input("Enter a string: ")
+# str1.sort()
+# #sort the splitted words
 
-str1 = str.split()
-str1.sort()
-for words in str1:
-    print(words)
+# for words in str1:
+#     print(words)
 
-# deleting items in a list
+# # Give user input
+# str = input("Enter a string: ")
 
-p = [1,2,3,4,5,6,7,8,9,0]
+# str1 = str.split()
+# str1.sort()
+# for words in str1:
+#     print(words)
 
-del p[2]
-print(p[:])
+# # deleting items in a list
 
-del p[-3]
-print(p[:])
+# p = [1,2,3,4,5,6,7,8,9,0]
 
-p.remove(0)
-print(p[:])
+# del p[2]
+# print(p[:])
 
-p.pop()
-print(p[:])
+# del p[-3]
+# print(p[:])
 
-p.clear()
-print(p[:])
+# p.remove(0)
+# print(p[:])
 
-print("\n\n\n")
-c = [6,4,8,4,2,1,9,0]
+# p.pop()
+# print(p[:])
 
-c.remove(4)
-print(c[:])
+# p.clear()
+# print(p[:])
 
-c.sort()
-print(c[:])
+# print("\n\n\n")
+# c = [6,4,8,4,2,1,9,0]
 
-c.reverse()
-print(c[:])
+# c.remove(4)
+# print(c[:])
 
-c.clear()
-print(c[:])
+# c.sort()
+# print(c[:])
 
-=======
-foods = ["Rice","Spaghetti","Chapati","Ugali"]
-print("\nThis is a list of food: ",foods,"\n")
-print("\n\t\t\tI like",foods[0],"and maybe",foods[2],"a littu bit of", foods[3],"\n\t\t\tnot so much a fan of", foods[1],"\n")
-for food in foods:
-    print("We have:",food,"\n")
-print("\nThe price of",foods[0],foods[3],"is 50 USD")
-print("The most popular food is",foods[1],foods[2],"\nTheses would also cost a fortune btw\n")
-foods.append("Chicken curry")
-print("Appended list of foods:",foods,"\n")
-foods.insert(1,"Beef Stew")
-print("Insert a beefy stew at index 2: ",foods,"\n")
-famous_quote = "'Mimi ni Mukurima, nanyi Muzabibu, zaleni matunda iri mukure'"
-famous_quoter = "Martin Luther"
-print(f"{famous_quoter} once spoke gibberish and said {famous_quote} \n")
->>>>>>> main:chapter_2/cynthias_draft.py
+# c.reverse()
+# print(c[:])
+
+# c.clear()
+# print(c[:])
+
+# foods = ["Rice","Spaghetti","Chapati","Ugali"]
+# print("\nThis is a list of food: ",foods,"\n")
+# print("\n\t\t\tI like",foods[0],"and maybe",foods[2],"a littu bit of", foods[3],"\n\t\t\tnot so much a fan of", foods[1],"\n")
+# for food in foods:
+#     print("We have:",food,"\n")
+# print("\nThe price of",foods[0],foods[3],"is 50 USD")
+# print("The most popular food is",foods[1],foods[2],"\nTheses would also cost a fortune btw\n")
+# foods.append("Chicken curry")
+# print("Appended list of foods:",foods,"\n")
+# foods.insert(1,"Beef Stew")
+# print("Insert a beefy stew at index 2: ",foods,"\n")
+# famous_quote = "'Mimi ni Mukurima, nanyi Muzabibu, zaleni matunda iri mukure'"
+# famous_quoter = "Martin Luther"
+# print(f"{famous_quoter} once spoke gibberish and said {famous_quote} \n")
+
+# Indentation
+
+
+# password = input("Please type in a password: ")
+
+# if password == "kittycat":
+#     print("\n\tYou knew the password!")
+#     print("\tYou must be either the intended user...")
+#     print("\t...or quite an accomplished hacker.\n")
+# print("The program has finished its executin. Thanks and bye!\n")
+
+# Order of magnitude
+number = int(input("Please type in a number: "))
+
+if number < 1000:
+    print("This number is smaller than 1000")
+if number < 100:
+    print("This number is smaller than 100")
+if number < 10:
+    print("This number is smaller than 10")
+print("Thank you!")
+
+name = input("What is your name? ")
+
+# Soup or No soup
+if name != 'Jerry':
+    portions = int(input("How many portions of soup? "))
+    print("The total cost is",portions * 5.90,"\nNext please!")
+elif name == 'Jerry':
+    print
