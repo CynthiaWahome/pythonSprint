@@ -20,3 +20,30 @@ person_1['name'] = 'Cynthia Wahome'
 del person_1['gender']
 
 print(person_1)
+
+
+cities = {
+    'Nairobey': {
+        'country': 'Kenya',
+        'population in millions': 4.397,
+        'fact': 'The only capital ciy with a national park'
+    },
+    'Kigali' : {
+        'country': 'Rwanda',
+        'population in millions': 1.208,
+        'fact': 'The cleanest city in Africa'
+    },
+    'Johannesburg' : {
+        'country': 'South Africa',
+        'population in millions': 5.635,
+        'fact': 'Home to the worlds biggest man made forest',
+    } 
+}
+
+cities['Ougadoudou'] = [
+    'country',
+    'population in millions',
+    'fact'
+]
+
+print(cities)

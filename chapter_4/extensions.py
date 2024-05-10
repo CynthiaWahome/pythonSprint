@@ -34,3 +34,4 @@ for city, city_info in cities.items():
     print("\tPopulation: " ,population)
     print("\tFun fact: " + fact.title())
    
+

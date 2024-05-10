@@ -1,23 +1,34 @@
 # A list of Dictionaries
 
-chiwawa ={
+animal_1 = {
+    'name': 'chiwawa',
     'breed': 'dog',
     'owner': 'cynthia'
 }
 
-ocicat = {
+animal_2 = {
+    'name': 'opticut',
     'breed' : 'cat',
     'owner' : 'samuel'
 }
 
-angus = {
+animal_3 = {
+    'name': 'angus',
     'breed' : 'cow',
     'owner' : 'xaiver'
 }
 
-pets = [chiwawa, ocicat, angus]
+pets = [animal_1, animal_2, animal_3]
+
+# for pet in pets:
+#     for pet_name, pet_owner in pet.items():
+#         print(pet_name.title(), pet_owner.title()) # How can I change the case?
+
+
+# pets = [
+#     { 'breed': 'dog', 'owner': 'cynthia' },
+#     { 'breed' : 'cat', 'owner' : 'samuel' }
+# ]
 
 for pet in pets:
-    print(pet) # How can I change the case?
-
-
+    print(pet['name'], "of", pet['breed'], "belongs to", pet['owner'])
