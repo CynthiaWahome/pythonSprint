@@ -247,21 +247,117 @@
 # print("The program has finished its executin. Thanks and bye!\n")
 
 # Order of magnitude
-number = int(input("Please type in a number: "))
+# number = int(input("Please type in a number: "))
 
-if number < 1000:
-    print("This number is smaller than 1000")
-if number < 100:
-    print("This number is smaller than 100")
-if number < 10:
-    print("This number is smaller than 10")
-print("Thank you!")
+# if number < 1000:
+#     print("This number is smaller than 1000")
+# if number < 100:
+#     print("This number is smaller than 100")
+# if number < 10:
+#     print("This number is smaller than 10")
+# print("Thank you!")
 
-name = input("What is your name? ")
+# name = input("What is your name? ")
 
-# Soup or No soup
-if name != 'Jerry':
-    portions = int(input("How many portions of soup? "))
-    print("The total cost is",portions * 5.90,"\nNext please!")
-elif name == 'Jerry':
-    print
+# # Soup or No soup
+# if name != 'Jerry':
+#     portions = int(input("How many portions of soup? "))
+#     print("The total cost is",portions * 5.90,"\nNext please!")
+# elif name == 'Jerry':
+#     print
+
+# # using break
+# prompt = int(input("Which level do you want to play? (Choose from 1-10)\n (press 0 to quit) "))
+
+# while True: 
+#     if prompt == 0:
+#         break
+#     else:
+#         print("Get ready for level", prompt)
+#         break
+
+# # letting user decided when to quit
+# prompt_1 = "What is your favorite colour? "
+# prompt_1 += "\n [Enter 'quit' to exit]\n"
+
+# message = ""
+# while message != 'quit':
+#     message = input(prompt_1)
+#     print(message)
+
+# # Using flags
+# prompt_1 = "What is your favorite colour? "
+# prompt_1 += "\n [Enter 'quit' to exit]\n"
+
+# active = True
+# while active:
+#     message = input(prompt_1)
+#     if message == 'quit':
+#         active = False
+#     else:
+#         print(message)
+
+# # Using break to exit a loop
+
+# prompt_1 = "What is your favorite colour? "
+# prompt_1 += "\n [Enter 'quit' to exit]\n"
+
+# while True:
+#     message = input(prompt_1)
+
+#     if message == 'quit':
+#         break
+#     else:
+#         print(message,"is a beautiful colour!")
+
+# # using continue in a loop
+
+# current_number = 0
+# while current_number < 10:
+#     current_number += 1
+#     if current_number % 2 == 0:
+#         continue
+#     print(current_number)
+
+# Moving items from one list to another
+
+# unconfirmed_users = ['alice', 'brian', 'candance']
+# confirmed_users = []
+
+# while unconfirmed_users:
+#     currrent_user = unconfirmed_users.pop()
+
+#     print("Veryfying user: " + currrent_user.title())
+#     confirmed_users.append(currrent_user)
+    
+#     print("\nThe following users have been confirmed: ")
+#     for confirmed_user in confirmed_users:
+#         print(confirmed_user.title())
+
+# # Removing all instances of specific values from a list
+
+# pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabit', 'cat']
+# print(pets)
+
+# while 'cat' in pets:
+#     pets.remove('cat')
+
+# print(pets)
+
+# Filling a dictionary with user input
+
+responses = {}
+polling_active = True
+
+while polling_active:
+    name = input("\nWhat is your name? ")
+    response = input("\nWhich mountain would you like to climb someday? ")
+     
+    responses[name] = response
+
+    repeat = input("Would you like to let another person respond? (yes/no) ")
+    if repeat == 'no':
+        polling_active = False
+print("\n-- Poll Results ---")
+for name, response in responses.items():
+    print(name + "would like to climb "+ response + ".")
