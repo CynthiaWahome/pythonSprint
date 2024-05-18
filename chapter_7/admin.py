@@ -16,16 +16,8 @@ class Admin(User):
         super(). __init__(first_name,last_name,age,location)
         self.priviledges = "can add post", "can delete post", "can ban user"
 
-        
+    def show_priviledges(self):
+        print("These are the admin priviledges",self.priviledges)
 
-# user_1 = User('George', 'Washington' , 20 ,'Ontorio, Canada')
-# user_1.describe_user()
-# user_1.greet_user()
-
-# user_2 = User('Tina','Tunner', 16, 'Ohio, Texas')
-# user_2.describe_user()
-# user_2.greet_user()
-
-# user_3 = User('Brittney', 'Spears', 20, 'Las Vegas, USA')
-# user_3.describe_user()
-# user_3.greet_user()
+admin = Admin("Cynthia", "Wahome",29,"Washington DC")
+admin.show_priviledges()
