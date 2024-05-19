@@ -17,23 +17,28 @@ class User():
 
 class Admin(User):
     def __init__(self,first_name,last_name,age,location):
-        super(). __init__(first_name,last_name,age,location)
+        super().__init__(first_name,last_name,age,location)
         self.priviledges = "can add post", "can delete post", "can ban user"
 
     def show_priviledges(self):
         print("These are the admin priviledges",self.priviledges)
 
-admin = Admin("Cynthia", "Wahome",20,"Washington DC")
-admin.show_priviledges()
-admin.priviledges.show_priviledges()
+
+# make the priviledge instance an attribute in the Admin class.
+# create a new instance of Admin and use method() to show its priviledges
 
 class Priviledges():
-    def __init__(self, priviledges):
-        self.priviledges =  "can add post", "can delete post", "can ban user"
+    def __init__(self, priviledges =  "can add post, can delete post, can ban user"):
+        # self.priviledges =  "can add post", "can delete post", "can ban user"
+        self.priviledges = priviledges
 
     def show_priviledges(self):
         print("These are the admin priviledges",self.priviledges)
 
+    def describe_admin(self):
+        print("Priviledges:", self.priviledges)
 
+admin = Priviledges("sudo su")
+admin.show_priviledges()
+admin.describe_admin()
 
-###
