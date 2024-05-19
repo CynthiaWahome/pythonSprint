@@ -51,6 +51,10 @@ class Battery():
         print("This car has a " + str(self.battery_size) + "-KWH battery")
     
     def upgrade_battery(self, battery_size = 85):
+        print("Battery size :",self.battery_size)
+
+    def get_range(self):
+        
 
 
 # STUCK
