@@ -21,9 +21,15 @@ for line in lines:
 print(pi_string)
 print(len(pi_string))
 
-birthday = input("your birthday: mmddyy")
+#irthday = input("your birthday: mmddyy")
 
-if birthday in pi_string:
-    print("Your birthday exists in first mil")
-else:
-    print("We ishia buana")
+#if birthday in pi_string:
+#   print("Your birthday exists in first mil")
+#else:
+#   print("We ishia buana")
+
+
+with open(file_path, 'a') as file_2:
+    file_2.write("I love Programming")
+    file_2.write("Cynthia loves me")
+    
