@@ -54,10 +54,10 @@ class Battery():
         print("Battery size :",self.battery_size)
 
     def get_range(self):
-        
 
 
-# STUCK
+
+# STUCK page 178
        
 
 # my_tesla = ElectricCar('tesla','model,',2020)

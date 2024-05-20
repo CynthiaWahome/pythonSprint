@@ -20,4 +20,5 @@ class Admin(User):
         print("These are the admin priviledges",self.priviledges)
 
 admin = Admin("Cynthia", "Wahome",29,"Washington DC")
-print(admin, admin.show_priviledges())
+print(admin.show_priviledges())
+print(admin.describe_user())
