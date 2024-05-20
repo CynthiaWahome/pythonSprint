@@ -1,0 +1,5 @@
+In python you can list items
+In python you can create classes
+In python you can make dictionaries
+In python you import modules
+In python you can do arithmetic calculations
